@@ -22,5 +22,5 @@ export const questRouter : RouteMap = {
             PATCH: (req: Request) => new Response(),
             DELETE: (req: Request) => new Response(),
         },
-        "/quest/*": (req: Request) => Response.json({message: "Not Found"}, { status : 404})
+        "/quest/*": (req: Request) => Response.json({message: "Quest not found"}, { status : 404})
 }

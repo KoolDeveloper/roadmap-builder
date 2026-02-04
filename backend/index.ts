@@ -2,12 +2,13 @@ import {questRouter} from "./routes/quest"
 
 const server = Bun.serve({
     port:3000,
+    idleTimeout: 100,
     routes:{
-        "health" : new Response("Ok" , { status: 200 }),
+        "/health" : new Response("Ok" , { status: 200 }),
         ...questRouter
     },
     fetch(req){
-        return new Response("Not Found", { status: 404 })
+        return Response.json({message: "Not Found"}, { status : 404})
     }
 })
 
