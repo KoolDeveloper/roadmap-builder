@@ -1,4 +1,4 @@
-import type { RouteMap } from "../src/utils/types"
+import type { RouteMap } from "../../src/utils/types"
 
 export const questRouter : RouteMap = {
         "/quest": {

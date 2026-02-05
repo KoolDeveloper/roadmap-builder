@@ -1,14 +1,14 @@
-import type { RouteMap } from "../src/utils/types"
+import type { RouteMap } from "../../src/utils/types";
 
-export const rewardsRouter : RouteMap = {
-        "/rewards": {
+export const eventRouter : RouteMap = {
+        "/events": {
             GET: (req: Request) => new Response(),
             POST: (req: Request) => new Response(),
         },
-        "/rewards/id/:id" : {
+        "/events/id/:id" : {
             GET: (req: Request) => new Response(),
             PATCH: (req: Request) => new Response(),
             DELETE: (req: Request) => new Response(),
         },
-        "/rewards/*": (req: Request) => Response.json({message: "Reward not found"}, { status : 404})
+        "/events/*": (req: Request) => Response.json({message: "Event not found"}, { status : 404})
 }

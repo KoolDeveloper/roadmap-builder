@@ -1,5 +1,4 @@
 import { routes } from "./routes/index";
-import {questRouter} from "./routes/quest"
 
 const server = Bun.serve({
     port:3000,
