@@ -1,4 +1,4 @@
-import type { RouteMap } from "../src/types"
+import type { RouteMap } from "../src/utils/types"
 
 export const questRouter : RouteMap = {
         "/quest": {
@@ -17,7 +17,7 @@ export const questRouter : RouteMap = {
         "/quest/tirdparty": (req: Request)  =>  new Response(
             
         ),
-        "/quest/:id" : {
+        "/quest/id/:id" : {
             GET: (req: Request) => new Response(),
             PATCH: (req: Request) => new Response(),
             DELETE: (req: Request) => new Response(),
