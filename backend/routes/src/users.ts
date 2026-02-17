@@ -2,7 +2,8 @@ import type { RouteMap } from "../../src/utils/types";
 
 export const usersRouter: RouteMap = {
   "/users": {
-    POST: (req: Request) => new Response(),
+    GET: (req: Request) => new Response(),
+    POST: (req: Request) => new Response(), 
   },
 
   "/users/id/:id": {
